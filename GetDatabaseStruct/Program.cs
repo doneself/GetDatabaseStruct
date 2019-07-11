@@ -15,7 +15,6 @@ namespace GetDatabaseStruct
         {
             string connStringSettingName = "dzhdygz";
             string connString = System.Configuration.ConfigurationManager.ConnectionStrings[connStringSettingName].ToString();
-            //string outputDir = @"D:\Zero\MyDocument\Note\Daily";
             string outputDir = @"C:\Users\lok\Desktop\test";
             outputDir = Path.Combine(outputDir, DateTime.Now.ToString("yyyyMM"), DateTime.Now.ToString("yyyyMMdd"));
             if(!Directory.Exists(outputDir))
